@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Color Changer</title>
+</head>
+<body>
+
+    <h2>Background Color Changer</h2>
+
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="blue">Blue</button>
+
+    <script>
+        document.getElementById("red").addEventListener("click", function() {
+            document.body.style.backgroundColor = "red";
+        });
+
+        document.getElementById("green").addEventListener("click", function() {
+            document.body.style.backgroundColor = "green";
+        });
+
+        document.getElementById("blue").addEventListener("click", function() {
+            document.body.style.backgroundColor = "blue";
+        });
+    </script>
+
+</body>
+</html>

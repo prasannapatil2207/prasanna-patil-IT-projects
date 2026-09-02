@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Gram Panchayat</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+/* Header */
+
+header{
+background:rgb(223, 100, 5), 123, 0;
+color:white;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffd700;
+}
+
+/* Banner */
+
+.banner{
+background:linear-gradient(rgba(0,51,102,.8),rgba(0,51,102,.8)),
+url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80");
+background-size:cover;
+background-position:center;
+height:250px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+}
+
+/* Container */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+}
+
+.section-title{
+text-align:center;
+color:#003366;
+margin-bottom:20px;
+font-size:34px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+margin-bottom:50px;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.about-text p{
+line-height:1.8;
+margin-bottom:15px;
+}
+
+/* Cards */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#003366;
+margin-bottom:15px;
+}
+
+/* Objectives */
+
+.objectives{
+margin-top:50px;
+}
+
+.objectives ul{
+margin-top:20px;
+padding-left:25px;
+}
+
+.objectives li{
+margin-bottom:12px;
+}
+
+/* Stats */
+
+.stats{
+margin:60px 0;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.stat{
+background:#003366;
+color:white;
+padding:30px;
+text-align:center;
+border-radius:10px;
+}
+
+.stat h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+background:#002244;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+footer p{
+margin:8px 0;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+margin-top:15px;
+}
+
+nav ul li{
+margin:10px 0;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.banner{
+font-size:28px;
+height:180px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+Gram Panchayat Portal
+</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<div class="banner">
+About Our Gram Panchayat
+</div>
+
+<div class="container">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
+
+<div class="about-text">
+
+<p>
+Our Gram Panchayat is dedicated to providing transparent,
+efficient and citizen-friendly governance. We focus on
+overall village development through digital services,
+public welfare schemes and community participation.
+</p>
+
+<p>
+The Panchayat works continuously to improve education,
+healthcare, sanitation, drinking water, roads,
+agriculture and employment opportunities for every citizen.
+</p>
+
+<p>
+Our vision is to build a clean, smart, self-reliant and
+digitally connected village that ensures equal opportunities
+for all residents.
+</p>
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Our Mission</h3>
+<p>
+Deliver transparent administration, quality public services
+and sustainable rural development.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Vision</h3>
+<p>
+Create a modern, clean, educated and digitally empowered
+village for future generations.
+</p>
+</div>
+
+<div class="card">
+<h3>Core Values</h3>
+<p>
+Transparency, accountability, integrity, participation,
+innovation and citizen satisfaction.
+</p>
+</div>
+
+</div>
+
+<div class="objectives">
+
+<h2 class="section-title">
+Objectives
+</h2>
+
+<ul>
+
+<li>Provide better drinking water facilities.</li>
+
+<li>Improve sanitation and cleanliness.</li>
+
+<li>Support digital governance initiatives.</li>
+
+<li>Develop roads and public infrastructure.</li>
+
+<li>Promote education and healthcare.</li>
+
+<li>Encourage women empowerment and youth development.</li>
+
+<li>Implement Government welfare schemes effectively.</li>
+
+</ul>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h2>5000+</h2>
+<p>Citizens</p>
+</div>
+
+<div class="stat">
+<h2>20+</h2>
+<p>Government Schemes</p>
+</div>
+
+<div class="stat">
+<h2>98%</h2>
+<p>Digital Services</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Transparency</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p><strong>Gram Panchayat Portal</strong></p>
+
+<p>
+Village Development • Citizen Services • Digital Governance
+</p>
+
+<p>
+© 2026 Gram Panchayat. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

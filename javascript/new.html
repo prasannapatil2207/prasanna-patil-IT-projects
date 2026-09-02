@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Book</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+.container{
+    width:400px;
+    background:#fff;
+    margin:40px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    height:100px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid #000;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#007BFF;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<h2>Contact Book</h2>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="text" id="Address" placeholder="Address" required>
+
+
+
+
+<button type="submit">Submit</button>
+
+
+
+</form>
+</div>
+
+<table id="dataTable">
+<tr>
+<th>Name</th>
+<th>Phone</th>
+<th>Address</th>
+<th>Action</th>
+
+
+</tr>
+<input type="text" id="search" placeholder="Search Contact..." onkeyup="searchContact()">
+
+</table>
+
+<script src="new.js"></script>
+</body>
+</html>
